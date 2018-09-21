@@ -2,6 +2,9 @@ let mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    speed: 400,
+    slidesPerView: 1,
+    spaceBetween: 0,
 
 
     // Navigation arrows
@@ -11,6 +14,7 @@ let mySwiper = new Swiper('.swiper-container', {
     }
 
 });
+
 
 let menu = $('.sidenav');
 menu.bind("touchmove",open_close_menu);

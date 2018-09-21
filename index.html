@@ -6,8 +6,8 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./vendor/swiper/css/swiper.css">
     <link rel="stylesheet" href="./vendor/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./vendor/font-awesone/css/font-awesome.min.css">
 
     <script src="./vendor/swiper/js/swiper.min.js"></script>
 </head>
@@ -17,13 +17,13 @@
         <img src="img/logo.png"/>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-item">
-        HelloWorld
+        О бренде
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-item">
-        HelloWorld
+        Каталог
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-item">
-        HelloWorld
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-item" id="sale">
+        <img src="./img/sale.png">
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-item">
         HelloWorld
@@ -32,7 +32,7 @@
 
 <nav class="navbar navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="col-4">
-        <div class="bg-dark toggler"><span class="navbar-toggler-icon"></span></div>
+        <div class="bg-dark toggler"><span class="fa fa-bars"></span></div>
     </div>
     <div class="col-4 container-fluid justify-content-center">
         <a class="navbar-brand" href="#"><h1>Nika Ostapenko</h1></a>
@@ -42,22 +42,45 @@
 </nav>
 
 
-
-
 <div class="container-fluid">
     <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide slide1" content="img/1.jpg"></div>
             <div class="swiper-slide slide2" content="img/2.jpg"></div>
             <div class="swiper-slide slide3" content="img/3.jpg"></div>
-            ...
         </div>
-                <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-info" id="social-media">
+        <div class="row">
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <i class="fa fa-whatsapp"></i>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <i class="fa fa-vk"></i>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <i class="fa fa-youtube"></i>
+            </div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-info" id="geo">
+        <span class="fa fa-map-marker"></span> Караганда
     </div>
 </div>
 
