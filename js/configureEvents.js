@@ -3,9 +3,8 @@ let mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     speed: 400,
-    slidesPerView: 1,
+    slidesPerView: calculateSlidesPerView(),
     spaceBetween: 0,
-
 
     // Navigation arrows
     navigation: {
@@ -16,11 +15,26 @@ let mySwiper = new Swiper('.swiper-container', {
 });
 
 
+$(window).bind("orientationchange", configureSwiper);
+
 let menu = $('.sidenav');
 menu.bind("touchmove",open_close_menu);
 menu.bind("click",open_close_menu);
 $('.toggler').bind("click",open_close_menu);
 
+
+function configureSwiper() {
+    mySwiper.params.slidesPerView = calculateSlidesPerView();
+}
+
+function calculateSlidesPerView() {
+    let landscape = Math.abs(window.orientation) === 90;
+    if (landscape) {
+        return 2;
+    } else {
+        return 1;
+    }
+}
 
 function open_close_menu() {
     let sideNav = $('#mySidenav');
